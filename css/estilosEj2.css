@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-decoration: underline;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-10%);
+}
+
+p{
+    margin: 10px;
+}
+
+p:nth-child(2){
+    color: blue;
+}
+
+p:nth-child(3){
+    color: blue;
+}
+
+p:nth-child(4){
+    color: yellow;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
