@@ -1,0 +1,18 @@
+/* El body ocupa el primer lugar de la hoja de estilos */
+body{
+    /* border-width: 10px;
+    border-color: blue; */
+    border: 10px solid red;
+    color: red;
+}
+
+div{
+    /* No pueden ir en la misma linea y separados por ':' */
+    color: red;
+    font:Verdana;
+    opacity:0.5;
+}
+
+h1{
+    border: inherit;
+}
