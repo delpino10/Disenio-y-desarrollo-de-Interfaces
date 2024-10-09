@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio10</title>
+    <title>Ejercicio10 - CV</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
     <div class="container">
-        <div class="row mt-5 ">
+
+        <div class="row ">
             <div class="col-12">
-                <h3>Sobre Mí</h3>
+                <h2>Sobre Mi</h2>
             </div>
         </div>
         <!-- NavBar -->
@@ -45,44 +46,46 @@
                             <a class="nav-link " href="#" >Intereses</a>
                           </li>
                         </ul>
-                        
                       </div>
                     </div>
                   </nav>
             </div>
         </div>
-        <div class="row mb-2">
-            <div class="col-12 text-center d-flex justify-content-center align-items-center"
-            style="height: 200px; background: #eee;">
-                <h2 >Acerca de mi</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center d-flex justify-content-center align-items-center"
-            style="height: 200px; background: #eee;">
-                <h2 >Experiencia</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center d-flex justify-content-center align-items-center"
-            style="height: 200px; background: #eee;">
-                <h2 >Educación</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center d-flex justify-content-center align-items-center"
-            style="height: 200px; background: #eee;">
-                <h2 >Habilidades</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center d-flex justify-content-center align-items-center"
-            style="height: 200px; background: #eee;">
-                <h2 >Intereses</h2>
-            </div>
-        </div>
-    </div>
 
+        <div class="row vh-100" >
+            
+            <!-- Columna Izquierda -->
+            <div class="col-4  d-flex flex-column">
+                <div class="row"
+                style="height: 20%; overflow: hidden;">
+                <img src="img/1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="row p-3"
+                style="height: 20%;">Datos Personales</div>
+                <div class="row p-3"
+                style="height: 20%;">Logros</div>
+                <div class="row p-3"
+                style="height: 20%;">Otros</div>
+                <div class="row p-3"
+                style="height: 20%;">Proyectos</div>
+            </div>
+        
+            <!-- Columna derecha -->
+            <div class="col-8  d-flex flex-column align-items-center">
+                <div class="row bg-light w-100 p-3 "
+                style="height: 20%;">Acerca de Mi</div>
+                <div class="row bg-secondary w-100 p-3 text-white"
+                style="height: 20%;">Experiencia</div>
+                <div class="row bg-light w-100  p-3 border-top"
+                style="height: 20%;">Educación</div>
+                <div class="row bg-secondary w-100 p-3 text-white"
+                style="height: 20%;">Habilidades</div>
+                <div class="row bg-light w-100 p-3 border-top border-bottom"
+                style="height: 20%;">Intereses</div>
+            </div>
+        </div>
+
+    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
