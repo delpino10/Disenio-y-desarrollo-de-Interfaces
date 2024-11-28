@@ -2,11 +2,12 @@ body{
     font-family: Arial;
     text-align: center;
     padding: 50px;
+    background: #E1E1E1;
 }
 
 #barraContenedor{
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: #d3cece;
     border-radius: 10px;
     height: 30px;
     margin-top: 20px;
@@ -14,19 +15,27 @@ body{
 }
 
 
-.barraCarga{
+#barraCarga{
     height: 100%;
-    background-color: #4CAF50;
+    background-color: #03fcf8;
     width: 0;
     border-radius: 10px;
-    transition: width 0.3s ease;
+    transition: width .7s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
     padding: 20px 50px;
-    background: palegreen;
-    color: #1a1d20;
+    background: #03fcf8;
+    color: #000;
     margin-top: 20px;
     border: none;
     border-radius: 10px;
 }
+
+span{
+    display: none;
+}
+

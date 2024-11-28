@@ -1,10 +1,10 @@
 // script.js
+function iniciarDescarga() {
 
 let progreso = 0; // Progreso inicial
 const velocidad = 0.5; // Velocidad del incremento del progreso (porcentaje por "frame")
-let barraCarga, mensaje, animando = false;
+let barraCarga, mensaje
 
-function iniciarDescarga() {
     // Elementos de la barra de carga
     barraCarga = document.getElementById('barraCarga');
     mensaje = document.getElementById('mensaje');

@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <title>Ej4 | Barra de Carga</title>
   <link rel="stylesheet" href="css/estilos.css">
-  <script src="js/script.js"></script>
+  <script src="js/script2.js"></script>
 </head>
 <body>
 <h3>Barra de Carga</h3>
 
 <div id="barraContenedor" class="barraContenedor">
-  <div id="barraCarga" class="barraCarga"></div>
+  <div id="barraCarga" class="barraCarga"><span>%</span></div>
+
 </div>
 
-<button onclick="iniciarDescarga();">Descargar</button>
+<p id="mensaje"></p>
+
+<button onclick="iniciarAnimacion();">Descargar</button>
 
 </body>
 </html>
