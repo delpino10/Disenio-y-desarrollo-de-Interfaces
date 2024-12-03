@@ -1,0 +1,53 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+    background: #E1E1E1;
+}
+
+#barraContenedor{
+    width: 100%;
+    background-color: #d3cece;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+#barraCarga{
+    height: 100%;
+    background-color: #03fcf8;
+    width: 0;
+    border-radius: 10px;
+    transition: width .7s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 20px 50px;
+    background: #03fcf8;
+    color: #000;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+span{
+    display: none;
+}
+
+nav ul li{
+    display: inline;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #dc5834;
+    font-weight: bold;
+    padding: 0 10px;
+}
+

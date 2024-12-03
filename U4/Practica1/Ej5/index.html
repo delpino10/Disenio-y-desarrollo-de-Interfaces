@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio Web Interactivo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script2.js"></script>
+</head>
+<body>
+<!-- Encabezado -->
+<header>
+  <h1>Bienvenido a Mi Sitio Web Interactivo</h1>
+  <nav>
+    <ul>
+      <li><a href="#audio">Audio</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#barra-carga">Barra de Carga</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Sección de Audio -->
+<section id="audio">
+  <h2>Escucha mi Audio</h2>
+  <audio controls>
+    <source src="audio/ejemplo.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</section>
+
+<!-- Sección de Video -->
+<section id="video">
+  <h2>Mira mi Video</h2>
+  <video controls width="80%">
+    <source src="video/ejemplo.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
+</section>
+
+<!-- Barra de Carga -->
+<section id="barra-carga">
+  <h2>Barra de Carga Interactiva</h2>
+  <div id="barraContenedor" class="barraContenedor">
+    <div id="barraCarga" class="barraCarga"><span>%</span></div>
+  </div>
+  <button onclick="iniciarAnimacion();">Descargar</button>
+  <p id="mensaje"></p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Jose Antonio del Pino</p>
+</footer>
+
+</body>
+</html>
