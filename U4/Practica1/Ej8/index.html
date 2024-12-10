@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div id="caja1"></div>
+    <div id="caja2"></div>
+
+</body>
+
+<script>
+
+    let caja1 = document.getElementById('caja1');
+    let caja2 = document.getElementById('caja2');
+
+    // Pasa el ratón por encima de la primera caja
+    caja1.addEventListener(
+        "mouseenter",
+        () => {
+            // Cambia el fondo de la segunda caja
+            caja2.style.background = 'linear-gradient(45deg, #cb5f4c,  #6390c7)';
+        });
+    // Saca el ratón de la primera caja
+    caja1.addEventListener(
+       "mouseleave",
+       () => {
+           // Pone el fondo por defecto de la segunda caja
+           caja2.style.background = 'linear-gradient(45deg, lightblue, lightgreen)';
+       });
+
+</script>
+</html>

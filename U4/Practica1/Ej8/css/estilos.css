@@ -1,0 +1,15 @@
+#caja1, #caja2 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+/* Primera caja */
+#caja1 {
+    background: linear-gradient(45deg, #6390c7, #cb5f4c);
+}
+
+/* Segunda caja */
+#caja2 {
+    background: linear-gradient(45deg, lightblue, lightgreen);
+}
