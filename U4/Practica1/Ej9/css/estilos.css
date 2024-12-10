@@ -1,63 +1,101 @@
 body{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    height: 600px;
-    width: 600px;
-    /*background: #000;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: minmax(100px, 200px);
 }
 
-.letra{
-    font-weight: bold;
-    font-size: 80px;
-    /*text-align: center;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* perspective-origin values (unique per example) */
+.po-tl {
+    perspective-origin: top left;
+}
+.po-tm {
+    perspective-origin: top;
+}
+.po-tr {
+    perspective-origin: top right;
+}
+.po-ml {
+    perspective-origin: left;
+}
+.po-mm {
+    perspective-origin: 50% 50%;
+}
+.po-mr {
+    perspective-origin: right;
+}
+.po-bl {
+    perspective-origin: bottom left;
+}
+.po-bm {
+    perspective-origin: bottom;
+}
+.po-br {
+    perspective-origin: bottom right;
+}
+.po-200200neg {
+    perspective-origin: -200% -200%;
+}
+.po-200200pos {
+    perspective-origin: 200% 200%;
+}
+.po-200200 {
+    perspective-origin: 200% -200%;
+}
+
+/* Define the container div, the cube div, and a generic face */
+.container {
+    width: 100px;
+    height: 100px;
+    margin: 24px;
+    border: none;
+    grid-column: 2/3;
+    grid-row: 2 /3;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+
+.face {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    line-height: 100px;
+    font-size: 100px;
     color: white;
+    text-align: center;
 }
 
-.uno {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    background: red;
+/* Define each face based on direction */
+
+.back {
+    background: rgb(255 255 255/ 100%);
+    transform: rotateY(-180deg) translateZ(50px);
+    /*box-shadow: 20px 20px 50px 15px grey;*/
 }
-
-.dos {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background: green;
+.right {
+    background: rgb(196 0 0 / 100%);
+    transform: rotateY(90deg) translateZ(50px);
+    box-shadow: -5px 0 20px 0 black inset;
 }
-
-.tres {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background: #fff;
+.left {
+    background: rgb(0 128 0 / 100%);
+    transform: rotateY(-90deg) translateZ(50px);
+    box-shadow: 5px 0 20px 0 black inset;
 }
-
-.cuatro {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    background: blue;
+.top {
+    background: rgb(0 0 255 / 100%);
+    transform: rotateX(90deg) translateZ(50px);
+    box-shadow: 0 5px 20px 0 black inset;
 }
-
-.cinco {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    background: yellow;
-    --p: 50px; /* control the shape (can be percentage) */
-    height: 180px;
-    aspect-ratio: 3/2;
-    clip-path: polygon(var(--p) 0,calc(100% - var(--p)) 0,100% 100%,0 100%);
+.bottom {
+    background: rgb(234 190 63 / 100%);
+    transform: rotateX(-90deg) translateZ(50px);
+    box-shadow: 0 -5px 20px 0 black inset;
 }
-
-
-
 
