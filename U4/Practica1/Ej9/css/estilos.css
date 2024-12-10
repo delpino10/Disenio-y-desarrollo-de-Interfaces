@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 600px;
+    width: 600px;
+    /*background: #000;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.letra{
+    font-weight: bold;
+    font-size: 80px;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.uno {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: red;
+}
+
+.dos {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: green;
+}
+
+.tres {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: #fff;
+}
+
+.cuatro {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background: blue;
+}
+
+.cinco {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background: yellow;
+    --p: 50px; /* control the shape (can be percentage) */
+    height: 180px;
+    aspect-ratio: 3/2;
+    clip-path: polygon(var(--p) 0,calc(100% - var(--p)) 0,100% 100%,0 100%);
+}
+
+
+
+
