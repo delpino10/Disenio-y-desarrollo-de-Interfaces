@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 h1{
     color: deepskyblue;
@@ -61,6 +62,10 @@ h1{
     animation-iteration-count: 2;
 
 }
+
+.logo{
+    z-index: 10;
+}
 /* Definir la animación dividida en 9 partes */
 @keyframes botar {
     0% {
@@ -93,13 +98,15 @@ h1{
         transform: scale(0, 0);
     }
     77.77% {
-        transform: scale(0, 0);
+        transform: scale(50, 50);
     }
     88.88% {
         transform: scale(0, 0);
     }
     100% {
-        transform: scale(0, 0);
+        /*z-index: -1;*/
+        transform: scale(50, 50);
+        display: none;
     }
 }
 
