@@ -13,11 +13,7 @@ body{
     align-items: center;
     overflow: hidden;
 }
-h1{
-    color: deepskyblue;
-    z-index: 10;
-    position: relative;
-}
+
 
 .canvas{
     display: flex;
@@ -47,7 +43,8 @@ h1{
     top: 100px;
     z-index: 1;
     animation: botar 4s infinite;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
+    visibility: hidden;
 }
 
 .sombra{
@@ -56,20 +53,26 @@ h1{
     background: #1a1a1a;
     border-radius: 50%;
     position: relative;
-    left: 365px;
+    left: 360px;
     top: 785px;
     animation: sombra 4s infinite;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
 
 }
 
 .logo{
     z-index: 10;
+    border-radius: 50%;
+    animation: logo linear 1s infinite;
+    animation-delay: 4s;
+    filter: brightness(1);
 }
+
+
 /* Definir la animación dividida en 9 partes */
 @keyframes botar {
     0% {
-
+    visibility: visible;
     }
     11.11% {
         height: 55px;
@@ -106,7 +109,6 @@ h1{
     100% {
         /*z-index: -1;*/
         transform: scale(50, 50);
-        display: none;
     }
 }
 
@@ -132,3 +134,23 @@ h1{
         transform: scaleX(1.5);
     }
 }
+
+@keyframes logo {
+    0% {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+    25% {
+        filter: brightness(1);
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+        filter: brightness(3);
+    }
+    100% {
+        filter: brightness(1);
+        transform: scale(1.2);
+    }
+}
+
