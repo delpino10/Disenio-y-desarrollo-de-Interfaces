@@ -1,0 +1,28 @@
+@keyframes latidoCorazon {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    35% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplicar la animación a una imagen de corazón */
+.corazon {
+    width: 100px;
+    height: 100px;
+    background-image: url('img/corazon.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: latidoCorazon 1s infinite;
+}

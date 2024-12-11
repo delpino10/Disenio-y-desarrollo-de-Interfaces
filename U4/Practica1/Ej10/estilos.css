@@ -39,7 +39,8 @@ body{
     left: 365px;
     top: 100px;
     z-index: 1111;
-    animation: botar 1s infinite;
+    animation: botar 2s infinite;
+    animation-iteration-count: 3;
 }
 
 .sombra{
@@ -50,7 +51,8 @@ body{
     position: relative;
     left: 0;
     top: 448px;
-    animation: sombra 1s infinite;
+    animation: sombra 1s ;
+    animation-iteration-count: 3;
 
 }
 
@@ -59,17 +61,23 @@ body{
         height: 70px;
         width: 70px;
     }
-    50%{
+    30%{
         height: 55px;
         width: 80px;
         transform: translateY(700px);
     }
-    75%{
+    65%{
         height: 60px;
         width: 70px;
+        transform: translateY(500px);
+    }
+    85%{
+        height: 60px;
+        width: 70px;
+        transform: translateY(700px);
     }
     100%{
-        animation: sale 1s infinite;
+        transform: translateY(400px);
     }
 }
 
@@ -80,11 +88,3 @@ body{
     }
 }
 
-@keyframes sale {
-
-    10%{
-        height: 300px;
-        width: 300px;
-    }
-
-}
