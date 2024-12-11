@@ -57,6 +57,7 @@ body{
     top: 785px;
     animation: sombra 4s infinite;
     animation-iteration-count: 1;
+    visibility: hidden;
 
 }
 
@@ -116,7 +117,7 @@ body{
 @keyframes sombra {
 
     0% {
-
+    visibility: visible;
     }
     11.11% {
         transform: scaleX(1.5);
@@ -141,15 +142,15 @@ body{
         transform: scale(1);
     }
     25% {
-        filter: brightness(1);
+        filter: brightness(3);
         transform: scale(1.2);
     }
     50% {
         transform: scale(1);
-        filter: brightness(3);
+        filter: brightness(1);
     }
     100% {
-        filter: brightness(1);
+        filter: brightness(3);
         transform: scale(1.2);
     }
 }
