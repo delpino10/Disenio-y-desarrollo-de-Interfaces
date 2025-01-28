@@ -17,13 +17,13 @@ function iniciarAnimacion() {
                 progreso++;
         }else{
             clearInterval(interval)
+            mensaje.innerHTML = "¡Descarga Completada!";
         }
 
     }
-    const interval = setInterval(actualizaBarra, 50);
+    const interval = setInterval(actualizaBarra, 30);
 
 
-    mensaje.innerHTML = "¡Descarga Completada!";
 
 
 }

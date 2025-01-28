@@ -37,7 +37,7 @@ body{
     border-radius: 50%;
     position: relative;
     left: 365px;
-    top: 100px;
+    top: 350px;
     z-index: 1;
     animation: botar 4s infinite;
     animation-iteration-count: 1;
@@ -54,6 +54,8 @@ body{
     top: 785px;
     animation: sombra 4s infinite;
     animation-iteration-count: 1;
+    visibility: hidden;
+
 }
 
 .logo{
@@ -65,7 +67,6 @@ body{
 }
 
 
-/* Definir la animación dividida en 9 partes */
 @keyframes botar {
     0% {
     visibility: visible;
@@ -73,22 +74,22 @@ body{
     11.11% {
         height: 55px;
         width: 80px;
-        transform: translateY(700px);
+        transform: translateY(450px);
     }
     22.22% {
         height: 70px;
         width: 70px;
-        transform: translateY(400px);
+        transform: translateY(350px);
     }
     33.33% {
         height: 55px;
         width: 80px;
-        transform: translateY(700px);
+        transform: translateY(450px);
     }
     44.44% {
         height: 70px;
         width: 70px;
-        transform: translateY(600px);
+        transform: translateY(350px);
     }
     55.55% {
         transform: scale(100, 100);
@@ -112,7 +113,7 @@ body{
 @keyframes sombra {
 
     0% {
-
+    visibility: visible;
     }
     11.11% {
         transform: scaleX(1.5);
@@ -142,10 +143,10 @@ body{
     }
     50% {
         transform: scale(1);
-        filter: brightness(3);
+        filter: brightness(1);
     }
     100% {
-        filter: brightness(1);
+        filter: brightness(3);
         transform: scale(1.2);
     }
 }
