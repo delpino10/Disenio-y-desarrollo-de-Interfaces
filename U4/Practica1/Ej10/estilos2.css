@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     height: 100vh;
     width: 100%;
@@ -14,7 +13,6 @@ body{
     overflow: hidden;
 }
 
-
 .canvas{
     display: flex;
     justify-content: center;
@@ -23,7 +21,6 @@ body{
     height: 100%;
     background: #000;
     position: absolute;
-
 }
 
 .container{
@@ -57,7 +54,6 @@ body{
     top: 785px;
     animation: sombra 4s infinite;
     animation-iteration-count: 1;
-
 }
 
 .logo{
